@@ -1,0 +1,103 @@
+body{
+    background: linear-gradient(to right, rgb(142, 241, 142), white, rgb(124, 219, 124));
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 200px;
+    padding-left: 250px;
+}
+
+h1{
+    font-size: 40px;
+    padding-left: 100px;
+    margin: 0;
+    padding-bottom: 0;
+
+}
+p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+button{
+    padding: 15px 30px;
+    margin-left: 150px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #388e3c;
+}
+
+form{
+    background: #388e3c;
+    width: 500px;
+    padding: 50px;
+}
+
+input{
+    padding: 20px;
+    margin: 5px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+select{
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+#certification-proof{
+    padding: 20px;
+    margin: 5px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+#project-description{
+    padding: 20px;
+    margin: 5px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.review-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .review-item {
+    margin-bottom: 15px;
+  }
+  .review-item span {
+    font-weight: bold;
+  }
+  .button-container {
+    margin-top: 20px;
+  }
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }

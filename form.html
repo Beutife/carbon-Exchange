@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Infor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Project Information</h2>
+        <form id="carbon-credit-form">
+          <!-- Question 1: Project Name -->
+          <label for="project-name">What is the name of your carbon credit project?</label> <br> <br> 
+          <input type="text" id="project-name" name="project-name" placeholder="Enter project name" required> <br> <br> <br> <br>
+    
+          <!-- Question 2: Project Location -->
+          <label for="location">Where is the project located? (e.g., Lagos, Nigeria, Accra, Ghana)</label> <br> <br>
+          <input type="text" id="location" name="location" placeholder="Enter project location" required> <br> <br> <br> <br>
+    
+          <!-- Question 3: Type of Project -->
+          <label for="project-type">What type of project is this?</label> <br> <br>
+          <!-- Dropdown --> 
+          <select id="project-type" name="project-type" required>
+            <option value="" disabled selected>Select project type</option>
+            <option value="Oil and Gas">Oil and Gas</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Energy Efficiency">Energy Efficiency</option>
+            <option value="Renewable Energy">Renewable Energy</option>
+            <option value="Forestry">Forestry</option>
+          </select> <br> <br> <br> <br>
+    
+          <h2>Carbon Credits Tokenization</h2>
+    
+          <!-- Carbon Credit Details -->
+          <!-- Question 4: Number of Carbon Credits -->
+          <label for="carbon-credits">How many carbon credits do you want to tokenize?</label> <br> <br>
+          <input type="number" id="carbon-credits" name="carbon-credits" min="1"  placeholder="Enter number of carbon credits" required> <br> <br> <br> <br>
+
+          <!-- Question 5: Vintage Year -->
+          <label for="vintage-year">What is the vintage year of these credits?</label> <br> <br>
+          <input type="number" id="vintage-year" name="vintage-year" min="1900" max="2024" placeholder="Enter vintage year (e.g., 2022)" required>  <br> <br> <br> <br>
+
+          <!-- Question 6: Certification Standard -->
+          <label for="certification-standard">Which certification standard does your project follow?</label> <br> <br>
+          <select id="certification-standard" name="certification-standard" required>
+            <option value="" disabled selected>Select certification standard</option>
+            <option value="VCS">Verified Carbon Standard (VCS)</option>
+            <option value="Gold Standard">Gold Standard</option>
+            <option value="Climate Action Reserve">Climate Action Reserve</option>
+          </select> <br> <br> <br> <br>
+
+          <!-- Tokenization Parameters -->
+          <h2>Tokenization Parameter</h2>
+          <!-- Question 7: NFT Token Name -->
+          <label for="nft-token">Enter a unique name for your carbon credit NFT token:</label> <br> <br>
+          <input type="text" id="nft-token" name="nft-token" placeholder="e.g., ProjectA-Carbon-2023" required> <br> <br> <br> <br>
+
+          <!-- Question 8: Project Description -->
+          <label for="project-description">Provide a description of your carbon credit project:</label> <br> <br>
+          <textarea id="project-description" name="project-description" placeholder="Write a short description of the project and its environmental impact" required></textarea> <br> <br> <br> <br>
+
+          <!-- Question 9: Upload Proof of Certification -->
+          <label for="certification-proof">Upload proof of certification for your carbon credits:</label> <br> <br>
+          <input type="file" id="certification-proof" name="certification-proof" accept=".pdf" required> <br> <br> <br> <br>
+
+          <!-- Question 10: Wallet Address -->
+          <label for="wallet-address">Provide a wallet address to receive the newly minted carbon credit NFTs:</label> <br> <br>
+          <input type="text" id="wallet-address" name="wallet-address" placeholder="Enter your Lisk wallet address" required> <br> <br> <br> <br>
+
+          <!-- Submit Button -->
+          <button id="review-btn" type="submit">Submit</button> 
+    
+        </form>
+      </div>
+</body>
+<script src="main.js"></script>
+</html>
